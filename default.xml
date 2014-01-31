@@ -31,6 +31,9 @@
   <remote name="cr3pt" 
           fetch="git://github.com/cr3pt/" />
   
+  <remote name="legacy" 
+          fetch="git://github.com/legaCyMod/" />
+  
   <remote name="google" 
           fetch="http://code.google.com/" />
   
@@ -504,6 +507,6 @@
   <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="cm-11.0" remote="cr3pt"/>
   <project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk-OC" remote="cr3pt"/>
   <!-- FM apps -->
-  <project path="hardware/qcom/fm-mr1" name="legaCyMod/android_hardware_qcom_fm" revision="cm-11.0" />
-  <project path="packages/apps/FM2" name="legaCyMod/android_packages_apps_FM2" revision="cm-11.0" />
+  <project path="hardware/qcom/fm-mr1" name="legaCyMod/android_hardware_qcom_fm" revision="cm-11.0" remote="legacy" />
+  <project path="packages/apps/FM2" name="legaCyMod/android_packages_apps_FM2" revision="cm-11.0" remote="legacy" />
 </manifest>
