@@ -503,11 +503,12 @@
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
-  <!-- and P700 && P705 !! -->
+  <!-- and P700 && P705 && P708 !! -->
   <project path="vendor/lge" name="proprietary_vendor_lge" revision="cm-11.0" remote="cr3pt"/>
   <project path="device/lge/e610" name="android_device_lge_e610" revision="cm-11.0" remote="cr3pt"/>
   <project path="device/lge/p700" name="android_device_lge_p700" revision="cm-11.0" remote="cr3pt"/>
   <project path="device/lge/p705" name="android_device_lge_p705" revision="cm-11.0" remote="cr3pt"/>
+  <project path="device/lge/p708" name="android_device_lge_p708" revision="cm-11.0" remote="cr3pt"/>
   <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="cm-11.0" remote="cr3pt"/>
   <project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk-extra" remote="cr3pt"/>
   <!-- FM apps -->
