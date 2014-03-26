@@ -48,7 +48,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="android_build" groups="pdk" remote="cr3pt" >
+  <project path="build" name="android_build" groups="pdk" remote="IMER" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -506,7 +506,7 @@
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
   <!-- and P700 && P705 && P708 !! -->
   <project path="vendor/lge" name="proprietary_vendor_lge" revision="cm-11.0" remote="IMER"/>
-  <project path="device/lge/p705" name="android_device_lge_p705" revision="cm-11.0" remote="cr3pt"/>
+  <project path="device/lge/p705" name="android_device_lge_p705" revision="cm-11.0" remote="IMER"/>
   <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="cm-11.0" remote="IMER"/>
   <project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk-extra" remote="IMER"/>
   <!-- FM apps -->
