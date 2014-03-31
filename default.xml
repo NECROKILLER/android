@@ -24,7 +24,10 @@
   
   <remote name="bart" 
           fetch="git://github.com/bart452/" />
-  
+          
+  <remote  name="gh"
+           fetch="https://github.com/" />
+           
   <remote name="ron" 
           fetch="git://github.com/RonGokhale/" />
   
@@ -509,7 +512,7 @@
   <project path="device/lge/p705" name="android_device_lge_p705" revision="cm-11.0" remote="IMER"/>
   <project path="device/lge/p700" name="android_device_lge_p700" revision="cm-11.0" remote="IMER"/>
   <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="cm-11.0" remote="IMER"/>
-  <project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk-extra" remote="IMER"/>
+  <project path="kernel/lge/msm7x27a-common" name="justforlg/lge-kernel-lproj" revision="android-msm-3.4-kk" remote="gh"/>
   <!-- FM apps -->
   <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" revision="cm-11.0" remote="cr3pt" />
 </manifest>
