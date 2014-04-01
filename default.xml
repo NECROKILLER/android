@@ -42,10 +42,7 @@
           
   <remote name="IMER" 
           fetch="https://github.com/096-NET-UKRAINE" />
-          
-  <remote name="IMER" 
-          fetch="https://github.com/096-NET-UA" />
-  
+
   <remote name="bit" 
           fetch="https://bitbucket.org/"/>
 
