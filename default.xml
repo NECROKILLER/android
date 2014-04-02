@@ -15,33 +15,24 @@
   <remote name="caf"
           fetch="git://codeaurora.org/" 
           review="codeaurora.org" />
-          
+
   <remote name="THLG" 
           fetch="git://github.com/TeamHackLG/" />
-  
-  <remote name="v6" 
-          fetch="git://github.com/androidarmv6/" />
-  
-  <remote name="bart" 
-          fetch="git://github.com/bart452/" />
-          
+
   <remote  name="gh"
            fetch="https://github.com/" />
-           
-  <remote name="ron" 
-          fetch="git://github.com/RonGokhale/" />
-  
+
   <remote name="cr3pt" 
           fetch="git://github.com/cr3pt/" />
-  
+
   <remote name="legacy" 
           fetch="git://github.com/legaCyMod/" />
-          
+
+  <remote name="uklg" 
+          fetch="https://github.com/096-NET-UKRAINE" />
+
   <remote name="google" 
           fetch="http://code.google.com/" />
-          
-  <remote name="IMER" 
-          fetch="https://github.com/096-NET-UKRAINE" />
 
   <remote name="bit" 
           fetch="https://bitbucket.org/"/>
@@ -51,7 +42,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="android_build" groups="pdk" remote="IMER" >
+  <project path="build" name="android_build" groups="pdk" remote="uklg" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -75,11 +66,6 @@
   <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" groups="pdk" />
   <project path="device/generic/mips" name="CyanogenMod/android_device_generic_mips" groups="pdk" />
   <project path="device/generic/x86" name="CyanogenMod/android_device_generic_x86" groups="pdk" />
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="device/google/accessory/arduino" name="CyanogenMod/android_device_google_accessory_arduino" groups="device" />
-  <project path="device/google/accessory/demokit" name="CyanogenMod/android_device_google_accessory_demokit" groups="device" />
   <project path="device/sample" name="CyanogenMod/android_device_sample" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
   <project path="external/aac" name="CyanogenMod/android_external_aac" groups="pdk" />
@@ -307,8 +293,8 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" groups="pdk" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zxing" name="CyanogenMod/android_external_zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="IMER" revision="cm-11.0"/>
-  <project path="frameworks/base" name="android_frameworks_base" remote="cr3pt" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="uklg" revision="cm-11.0"/>
+  <project path="frameworks/base" name="android_frameworks_base" remote="uklg" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
@@ -342,7 +328,7 @@
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="IMER" revision="cm-11.0"/>
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="uklg" revision="cm-11.0"/>
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="cr3pt" revision="cm-11.0"/>
   <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom" />
   <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" />
@@ -354,15 +340,10 @@
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" />
   <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" groups="caf" remote="THLG"/>
-  <project path="hardware/qcom/msm8960" name="CyanogenMod/android_hardware_qcom_msm8960" groups="qcom_msm8960" />
-  <project path="hardware/qcom/msm8x74" name="CyanogenMod/android_hardware_qcom_msm8x74" groups="qcom_msm8x74" />
   <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" />
   <project path="hardware/qcom/sensors" name="CyanogenMod/android_hardware_qcom_sensors" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" groups="pdk"  />
-  <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" />
-  <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" />
-  <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" />
   <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" />
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" />
   <project path="libcore" name="CyanogenMod/android_libcore" />
@@ -375,7 +356,7 @@
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="cr3pt" />
   <project path="packages/apps/Calculator" name="CyanogenMod/android_packages_apps_Calculator" />
   <project path="packages/apps/Calendar" name="CyanogenMod/android_packages_apps_Calendar" />
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="IMER"  />
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="uklg"  />
   <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
@@ -402,7 +383,7 @@
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
   <project path="packages/apps/QuickSearchBox" name="CyanogenMod/android_packages_apps_QuickSearchBox" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cr3pt" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="uklg" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" remote="cr3pt" />
   <project path="packages/apps/SpeechRecorder" name="CyanogenMod/android_packages_apps_SpeechRecorder" />
@@ -502,17 +483,17 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
-  <project path="vendor/cm" name="android_vendor_cm" revision="cm-11.0" remote="IMER"/>
+  <project path="vendor/cm" name="android_vendor_cm" revision="cm-11.0" remote="uklg"/>
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
+
   <!-- and P700 && P705 -->
-  <project path="vendor/lge" name="proprietary_vendor_lge" revision="cm-11.0" remote="IMER"/>
-  <project path="device/lge/p705" name="android_device_lge_p705" revision="cm-11.0" remote="IMER"/>
-  <project path="device/lge/p700" name="android_device_lge_p700" revision="cm-11.0" remote="IMER"/>
-  <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="cm-11.0" remote="IMER"/>
-  <project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk" remote="IMER"/>
-  <!-- FM apps -->
-  <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" revision="cm-11.0" remote="cr3pt" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="uklg" revision="cm-11.0" />
+  <project path="device/lge/p705" name="android_device_lge_p705" remote="uklg" revision="cm-11.0" />
+  <project path="device/lge/p700" name="android_device_lge_p700" remote="uklg" revision="cm-11.0" />
+  <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" remote="uklg" revision="cm-11.0" />
+  <project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" remote="uklg" revision="android-msm-3.4-kk"/>
+
 </manifest>
